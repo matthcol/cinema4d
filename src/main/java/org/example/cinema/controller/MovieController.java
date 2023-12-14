@@ -9,7 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
 import java.util.List;
 
 @RestController
@@ -35,7 +34,6 @@ public class MovieController {
             @ApiResponse(responseCode = "201", description = "Successfully created"),
             @ApiResponse(responseCode = "400", description = "Bad Request")
     })
-    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public ResponseEntity<Movie> add(@RequestBody Movie movie) {
         movie.setId((int) Math.round(Math.random() * 100000));
