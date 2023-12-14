@@ -15,7 +15,7 @@ import java.util.List;
 public class MovieController {
 
     @GetMapping
-    public List<Movie> recentMovies(){
+    public List<Movie> recentMovies() {
         return List.of(
                 Movie.builder().title("Oppenheimer").build(),
                 Movie.builder().title("Hunger Games").build()
