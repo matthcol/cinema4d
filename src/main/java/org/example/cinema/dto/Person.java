@@ -1,3 +1,4 @@
+
 package org.example.cinema.dto;
 
 import lombok.Builder;
@@ -11,3 +12,4 @@ public class Person {
     public String prenom;
     public int age;
 }
+
