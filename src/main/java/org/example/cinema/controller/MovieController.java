@@ -25,7 +25,11 @@ public class MovieController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public Movie add(Movie movie) {
+<<<<<<< HEAD
         movie.setId((int) Math.round(Math.random()*100000));
+=======
+        movie.setId((int) Math.round(Math.random() * 1000));
+>>>>>>> 24e057f (generate random id)
         return movie;
     }
 }
