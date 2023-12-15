@@ -39,4 +39,10 @@ public class MovieController {
         movie.setId((int) Math.round(Math.random() * 100000));
         return new ResponseEntity<>(movie, HttpStatus.CREATED);
     }
+
+    @GetMapping("{id}")
+    public Movie getById(int id) {
+        // TODO
+        return null;
+    }
 }
